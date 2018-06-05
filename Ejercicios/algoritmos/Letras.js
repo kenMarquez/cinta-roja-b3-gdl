@@ -1,5 +1,7 @@
 var cadena="carlos";
 
 for(let i=0;i<cadena.length;i++){
-    console.log(cadena.substring(cadena,cadena))
+    if (i==cadena.length-1){
+        console.log(cadena[i])
+    }
 }
