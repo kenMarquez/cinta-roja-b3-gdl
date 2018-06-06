@@ -1,11 +1,11 @@
-
 // 1)  obtener el numero mas grande dentro de un arreglo
 let arr = [0,4,5,2,6]
 let myMax = ar => {
   ar.sort()
   return ar[arr.length-1]
 }
-console.log(myMax(arr));
+console.log(`1) ${myMax(arr)}`);
+
 
 // 2) la suma de todos los elementos de un arreglo
 let mySum = arr => {
@@ -15,19 +15,19 @@ let mySum = arr => {
   });
   return suma
 }
-console.log(mySum(arr));
+console.log(`2) ${mySum(arr)}`);
+
 
 // 3) encontrar el numero faltante en un arreglo del 1 al 10
-let newarr = [1,2,3,4,5,7,6,9,10] // falta el 8
+let newarr = [1,2,3,4,5,7,6,8,9,10,12,13,14] // falta el 11 (1-14)
 
-let mySeek = arr => {
-  let tot = 55
-  arr.forEach(n => {
-    tot -= n
-  });
-  return tot
+let newSeek = arr =>{
+  let n1 = mySum(arr)
+  let n2 = mySum([...Array(arr.length+1).keys()].map(i => i + 1));
+  return n2-n1
 }
-console.log(mySeek(newarr));
+console.log(`3) ${newSeek(newarr)}`)
+
 
 // 4) encontrar todos los numeros pares de un arreglo
 let pares = arr => {
@@ -38,4 +38,4 @@ let pares = arr => {
   });
   return p
 }
-console.log(pares(newarr));
+console.log(`4) ${pares(newarr)}`);
