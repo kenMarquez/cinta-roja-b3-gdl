@@ -1,4 +1,4 @@
-const getBigger = (array) => {
+const getSum = (array) => {
     let suma = 0;
     array.forEach((number) =>{
         suma += number;
@@ -8,4 +8,4 @@ const getBigger = (array) => {
 
 const arrayNum = [1,2,3,4,5,6,7,8,9];
 
-console.log(getBigger(arrayNum));
+console.log(getSum(arrayNum));
