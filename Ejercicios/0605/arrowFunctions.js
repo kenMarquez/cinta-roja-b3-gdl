@@ -39,3 +39,19 @@ let pares = arr => {
   return p
 }
 console.log(`4) ${pares(newarr)}`);
+
+
+// 5) encontrar el numero repetido
+let arrRepetido = [1,2,3,8,5,7,2]
+
+const myRep = arr => {
+  for (const i in arr) {
+    if(arr.indexOf(arr[i]) != arr.lastIndexOf(arr[i]))
+      return arr[i]
+  }
+
+}
+console.log(`5) ${myRep(arrRepetido)}`);
+
+
+
