@@ -3,11 +3,13 @@ function reverseString(str) {
     for (var i = str.length - 1; i >= 0; i--) {
         newString += str[i];
     }
+    console.log(str);
+    console.log(newString);
 
-    var isAnagram = newString.length > 0 && (newString.toLowerCase().split('').sort().join('') === str.toLowerCase().split('').sort().join(''));
+    var isAnagram = (newString.toLowerCase() === str.toLowerCase());
 
     console.log(isAnagram);
     return newString;
 
 }
-reverseString('Ala');
+reverseString('Reconocer');
