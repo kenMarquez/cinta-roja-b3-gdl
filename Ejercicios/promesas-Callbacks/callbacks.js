@@ -61,31 +61,35 @@ const restar =(z,x)=>(z-x);
 const multiplicar =(z,x)=>(z*x);
 const dividir =(z,x)=>(z/x);
 
-const calculadora = (operaciones,z,x,callback)=>{
-    let resultados = 0;
-if(operaciones==="SUMAR"){
-    resultados= sumar(z,x);
+const calculadora = (operaciones,z,x,)=>{
+    return new Promise((resolve, reject)=>{
+        let resultados = 0;
+        if(operaciones==="SUMAR"){
+            resultados= sumar(z,x);
+        
+        }
+        else if (operaciones==="RESTA"){
+            resultados= restar(z,x);
+            
+        }
+        else if(operaciones==="MULTIPLICACION"){
+            resultados= multiplicar(z,x);
+        }
+        
+        else if(operaciones==="DIVIDIR"){
+            resultados= dividir(z,x);
+        }
+        
+        
+        else{
+            console.log("Esta Calculadora No Hace eso")
+        }
+        resolve(resultados)
+        })
 
-}
-else if (operaciones==="RESTA"){
-    resultados= restar(z,x);
-    
-}
-else if(operaciones==="MULTIPLICACION"){
-    resultados= multiplicar(z,x);
-}
-
-else if(operaciones==="DIVIDIR"){
-    resultados= dividir(z,x);
-}
+    }
 
 
-else{
-    console.log("Esta Calculadora No Hace eso")
-}
-callback(resultados)
-}
-
-calculadora("SUMAR",12,8,(res)=>{
-    console.log(res);
+calculadora("SUMAR",12,8).then((resul)=>{
+    console.log(resul);
 })
