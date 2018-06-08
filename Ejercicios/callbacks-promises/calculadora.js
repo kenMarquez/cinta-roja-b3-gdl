@@ -34,3 +34,6 @@ calculadora("multiplicacion", 5, 5, (resultadoOperacion) => {
 calculadora("division", 100, 5, (resultadoOperacion) => {
     console.log(resultadoOperacion);
 });
+
+//PROMESAS
+
