@@ -116,11 +116,11 @@ const mayor_horas=cantidades
 .filter(hora=>hora>=120);
 console.log(mayor_horas);
 
-//4- A partir de esta lista [1, 3, 5, 7, 9],  multiplicar 
+//4- A partir de esta lista [1, 3, 5, 7, 9], multiplicar 
 //todos los elementos por 7, y después sólo traer 
 //los que son menores a 30
 //.map es cuando quiero transformar todo hace lo que  hace un for casi casi
-//.filter solo toma algunos los que yo quiera y y lo que no no  pela  
+//.filter solo toma algunos los que yo quiera  y y lo que no no  pela  
 //.sort me lo ordena por su valor que tenga 
 multiplicar = [1,3,5,7,9];
 const menores_atreinta=multiplicar

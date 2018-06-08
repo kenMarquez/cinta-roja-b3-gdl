@@ -90,6 +90,8 @@ const calculadora = (operaciones,z,x,)=>{
     }
 
 
-calculadora("SUMAR",12,8).then((resul)=>{
+calculadora("SUMAR",7,9).then((resul)=>{
     console.log(resul);
+}).catch((erro) => {
+console.log(erro);
 })
