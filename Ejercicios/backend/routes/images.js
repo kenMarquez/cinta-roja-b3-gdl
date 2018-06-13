@@ -29,5 +29,11 @@ router.get('/:pos', (req, res, next) => {
     res.send(images[posicion]);
 })
 
+router.delete('/:pos', (req, res, next) => {
+    const posdelete = req.param.pos;
+    res.send(images.splice(posdelete, 1))
+
+})
+
 module.exports = router; // en app.js vamos a importar este archivo, cuando alguien te importe que es lo que vas a exponer
 
