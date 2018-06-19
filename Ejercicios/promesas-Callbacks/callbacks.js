@@ -63,6 +63,9 @@ const dividir =(z,x)=>(z/x);
 
 const calculadora = (operaciones,z,x,)=>{
     return new Promise((resolve, reject)=>{
+        if(operaciones<= 0){
+            return reject("ESTA CALCULADORA NECESITA UNA OPERACION EN ESPECIFICO");
+        }
         let resultados = 0;
         if(operaciones==="SUMAR"){
             resultados= sumar(z,x);
@@ -90,7 +93,7 @@ const calculadora = (operaciones,z,x,)=>{
     }
 
 
-calculadora("SUMAR",7,9).then((resul)=>{
+calculadora("SUMAR",8,9).then((resul)=>{
     console.log(resul);
 }).catch((erro) => {
 console.log(erro);

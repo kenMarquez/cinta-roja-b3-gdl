@@ -2,7 +2,7 @@ const express = require ("express");
 const app = express();
 const images = require('./routes/images.js')
 
-//este es un middleware
+// este es un middleware
 app.use('/images',images);
 
 app.listen(3000,()=>{
