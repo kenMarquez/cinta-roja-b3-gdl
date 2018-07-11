@@ -20,7 +20,10 @@ const styles = {
 };
 
 function SimpleMediaCard(props) {
-  const { classes, title, description, image } = props;
+  const { classes, title, description, image, id, history } = props;
+  const redirect = () =>{
+    history.push('/book/'+id);
+  }
   return (
     <div>
       <Card className={classes.card}>
@@ -30,7 +33,7 @@ function SimpleMediaCard(props) {
 
           title="Contemplative Reptile"
         />
-        <CardContent>
+        <CardContent onClick={()=>redirect()}>
           <Typography gutterBottom variant="headline" component="h2">
             {title}
           </Typography>
