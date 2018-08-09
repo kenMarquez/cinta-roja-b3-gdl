@@ -1,12 +1,13 @@
 const express = require ("express");
 const app = express();
 const images = require('./routes/images.js')
-
+const cors= require('cors');
 // este es un middleware
+app.use(cors());
 app.use('/images',images);
 
-app.listen(3000,()=>{
-    console.log('El servidor corre en el puerto 3000');
+app.listen(5000,()=>{
+    console.log('El servidor corre en el puerto 5000');
 });
 
 
