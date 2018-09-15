@@ -1,0 +1,14 @@
+{
+  "name": "servidores",
+  "version": "1.0.0",
+  "description": "primeros pasos con consumo de apis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esteban Fabian",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
