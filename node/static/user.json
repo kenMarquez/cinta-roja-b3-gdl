@@ -1,0 +1,24 @@
+[
+        {
+            "username":"elRodo",
+            "email":"elRodo@rodo.com",
+            "role":"admin"
+        },
+        {
+            "username":"Gus",
+            "email":"guslunar@outlook.com",
+            "role":"user"
+        },
+        {
+            "username":"elCarlos",
+            "email":"elCarlos@rodo.com",
+            "role":"user"
+        },
+        {
+            "username":"elHarry",
+            "email":"harry@rodo.com",
+            "role":"moderador"
+        }
+
+
+]
